@@ -4,13 +4,19 @@
   "description": "",
   "main": "src/main.ts",
   "scripts": {
-    "build": "webpack-cli --config webpack.config.js",
+    "tslint": "tslint --project tsconfig.json",
+    "build": "npm run tslint && webpack-cli --config webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "@__MOX__",
   "license": "MIT",
   "devDependencies": {
+    "prettier": "^1.19.1",
     "ts-loader": "^6.2.1",
+    "tslint": "^6.0.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-config-standard": "^9.0.0",
+    "tslint-plugin-prettier": "^2.1.0",
     "typescript": "^3.7.5",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10"

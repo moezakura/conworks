@@ -18,7 +18,13 @@ module.exports = {
             {
                 test: /\.ts$/,
                 loader: 'ts-loader'
-            }
+            },
+            {
+                enforce: "pre",
+                test: /\.js$/,
+                exclude: /node_modules/,
+                loader: "eslint-loader",
+            },
         ]
     }
 };
