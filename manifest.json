@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Conworks",
+  "version": "1.0",
+  "description": "add console utils.",
+  "icons": {},
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "js": [
+        "conworks.js"
+      ]
+    }
+  ]
+}
