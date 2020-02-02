@@ -6,7 +6,17 @@
     "strictNullChecks": true,
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
-    "allowJs": true
+    "allowJs": true,
+    "baseUrl": ".",
+    "lib": [
+      "dom",
+      "es2018"
+    ],
+    "paths": {
+      "@view/*": [
+        "./src/view/*"
+      ]
+    }
   },
   "exclude": [
     "node_modules"
